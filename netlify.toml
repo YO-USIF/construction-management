@@ -1,0 +1,16 @@
+[build]
+  publish = "out"
+  command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Environment variables (يجب إضافتها في إعدادات Netlify)
+# NEXT_PUBLIC_SUPABASE_URL = "https://your-project.supabase.co"
+# NEXT_PUBLIC_SUPABASE_ANON_KEY = "your-anon-key"
+# SUPABASE_SERVICE_ROLE_KEY = "your-service-role-key"
